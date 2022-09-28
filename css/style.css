@@ -30,6 +30,21 @@ body {
     list-style: none;
 }
 
+
+/* ховаємо заголовки */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /*хедер навігація*/
 /* стиль логотипу */
 .logo{
@@ -82,10 +97,11 @@ body {
 
 
 
-/*головна ідея*/
+/*секція головна ідея*/
 .hero{
-    background-color: #2F303A;
+    background-color: var(--secondary-bkg-color);
 }
+/* заголовок головної ідеї */
 .hero-title{
     color:var(--primary-white-color) ;
     font-weight: 900;
@@ -95,8 +111,9 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-
+/* кнопка */
 .button{
+    font-family: inherit;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -108,10 +125,6 @@ body {
     letter-spacing: 0.06em;
     cursor: pointer;}
 
-.button.primary{
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
 
 /* контент */
 .section{}
@@ -124,7 +137,8 @@ body {
 }
 
 
-/*инструменти*/
+/*секція инструменти*/
+/* стиль для заголовків інструментів */
 .instruments .title{
     font-weight: 700;
     font-size: 14px;
@@ -132,18 +146,18 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+/* стиль для опису інструментів */
 .instruments .text{
     color: var(--secondary-text-color);
-    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-/* чим ми займаємось */
+/* секція чим ми займаємось */
 .work-list{}
 
-/* наша команда */
+/* секція наша команда */
 .team-list{
     font-size: 16px;
     line-height: 1.19;
@@ -153,6 +167,7 @@ body {
 .team-list .title{
     color: var(--primary-text-color);
     font-weight: 500;
+    font-size: 16px;
 }
 /* позиція тіммейта */
 .team-list .position{
@@ -162,7 +177,7 @@ body {
 
 /* Cтилі для сторінки портфоліо */
 
-
+/* кнопки фільтрації */
 .button.filter {
     color: var(--primary-text-color);
     background-color: var(--calm-button-bg-color);
@@ -172,22 +187,22 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
-
+/* ховер та фокус для кнопок фільтрації */
 .button.filter:hover,
 .button.filter:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color)
 }
 
-
+/* вирівнюємо кнопки фільтрації по горизонталі */
 .filter-list{
     display: flex;
 }
-
+/* скидуємо оформлення тексту для прикладів роботи */
 .example{
     text-decoration: none;
-
 }
+/* стиль для заголовків прикладів робіт */
 .example-title{
     color: var(--primary-text-color);
     font-weight: 700;
@@ -195,12 +210,14 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
 }
+/* стиль для опису категорій(типів) робіт */
 .example-category{
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
+/* стиль длдетального опису прикладів робіт */
 .example-description{
     color: var(--primary-white-color);
     font-size: 18px;
@@ -213,13 +230,14 @@ body {
 .footer{
     background-color: var(--secondary-bkg-color);
 }
+/* контейнер адресси */
 .footer-adr{
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
+/* перелік контактів(адресс) у футері */
 .footer-adr-list{
 
 }
